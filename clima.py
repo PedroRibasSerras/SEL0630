@@ -2,6 +2,12 @@ from requests import get
 import json
 from pprint import pprint
 
+from picamera import PiCamera
+from time import sleep
+
+camera = PiCamera()
+camera.rotation = 180
+camera.hflip = True
 
 
 URL = 'http://apex.oracle.com/pls/apex/raspberrypi/weatherstation/getlatestmeasurements/966583'
@@ -28,4 +34,9 @@ string += str(info) + '\n'
 pprint(info)
 
 
-print(string)
+#Foto Clima
+camera.start_preview(alpha = 200)
+camera.annotate_text = string
+sleep(10)
+camera.capture('./img_weather.jpg')
+camera.stop_preview()
