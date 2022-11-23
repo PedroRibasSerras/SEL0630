@@ -5,13 +5,12 @@ camera = PiCamera()
 camera.rotation = 180
 camera.hflip = True
 
-#Fotos
-#camera.start_preview(alpha = 200)
-#for i in range (5):
-#    sleep(2)
-#    camera.capture('./img_teste{i}.jpg'.format(i = i))
-#
-#camera.stop_preview()
+#Foto
+camera.start_preview(alpha = 200)
+camera.annotate_text = "Grupo master blaster Boy, Drinker e Mussattinho\n11234328, 11299978 e 11234245"
+sleep(10)
+camera.capture('./img_teste.jpg')
+camera.stop_preview()
 
 
 #Video
