@@ -38,5 +38,5 @@ pprint(info)
 camera.start_preview(alpha = 200)
 camera.annotate_text = string
 sleep(10)
-camera.capture('./img_weather.jpg')
+camera.capture('./Img/img_weather.jpg')
 camera.stop_preview()
