@@ -26,4 +26,3 @@ Dentre os dados obtidos, foram selecionados 4 dados para serem incluídos em uma
 - _"updated\_on"_ --> Para mostrar a data de atualização dos dados
 - _"ambient\_temp"_ --> Para mostrar a temperatura registrada
 - _"humidity"_ --> Para mostrar a umidade registrada
-
